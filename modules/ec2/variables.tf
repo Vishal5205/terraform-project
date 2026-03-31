@@ -13,12 +13,16 @@ variable "key_name" {
     description = "Key name for the EC2 instance"
 }
 
-variable "sg_id" {
-    default = "sg-0123456789abcdef0"
-    description = "Security group ID for the EC2 instance"
-}
-
 variable "region" {
     default = "ap-south-1"
     description = "Region for the EC2 instance"
+}
+variable "sg_id" {
+    type = string
+    description = "security group ID"
+}
+
+variable "subnet_id" {
+    type = string
+    description = "subnet ID"
 }
