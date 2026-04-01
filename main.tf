@@ -92,7 +92,7 @@ module "ec2" {
     
     ami_id = "ami-05d2d839d4f73aafb"
     instance_type = "t3.micro"
-    key_name = "ap-south-1"
+    key_name = "Mumbai_region_key_pair"
    
     sg_id = aws_security_group.sg.id
     subnet_id = aws_subnet.public_subnet.id

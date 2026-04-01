@@ -9,7 +9,7 @@ variable "instance_type" {
 }
 
 variable "key_name" {
-    default = "ap-south-1"
+    default = "Mumbai_region_key_pair"
     description = "Key name for the EC2 instance"
 }
 
